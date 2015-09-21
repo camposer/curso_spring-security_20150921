@@ -47,6 +47,7 @@ public class DatabaseConfig {
 		factory.setJpaVendorAdapter(vendorAdapter);
 		factory.setPackagesToScan("model");
 		factory.setDataSource(dataSource());
+		//factory.setJpaDialect(new HibernateJpaDialect());
 		factory.afterPropertiesSet();
 
 		return factory.getObject();

@@ -2,9 +2,6 @@ package repository;
 
 import java.util.Date;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
