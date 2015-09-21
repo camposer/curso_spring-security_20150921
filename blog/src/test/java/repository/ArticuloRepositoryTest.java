@@ -1,4 +1,4 @@
-package jpa;
+package repository;
 
 import java.util.Date;
 
@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,15 +19,15 @@ import model.Articulo;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { DatabaseConfig.class, PropertyConfig.class })
-public class SimpleTest {
-	@PersistenceContext
-	private EntityManager em;
+public class ArticuloRepositoryTest {
+	@Autowired
+	private ArticuloRepository articuloRepository;
 	
 	@Test
 	@Transactional
 	public void agregar() {
 		Articulo a = new Articulo("nuevo", "nuevo", new Date());
-		em.persist(a);
+		articuloRepository.save(a);
 		Assert.assertNotNull(a.getId());
 	}
 }
