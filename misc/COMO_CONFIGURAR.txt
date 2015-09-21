@@ -1,9 +1,7 @@
-1.- Descargar repositorio 
-	https://github.com/camposer/curso_testing
+Cómo configurar proxy Maven
+===========================
 
-2.- Importar proyecto en Eclipse (Import existing projects into Workspace)
-
-3.- Configurar proxy MAVEN
+1.- Configurar proxy MAVEN
 	- Añadir el fichero settings.xml
 <settings>
   <proxies>
@@ -20,10 +18,6 @@
 
 	- Ir a Window -> Preferences -> Maven -> User settings y seleccionar el archivo. Hacer clic en "Update settings"
 
-4.- Clic derecho sobre el proyecto y hacer Maven -> Update project (seleccionar force update)
+2.- Clic derecho sobre el proyecto y hacer Maven -> Update project (seleccionar force update)
 
-5.- Ver pruebas:
-- HolaMundo
-- Calculadora
-- LibroDummy
-- LibroDao (base de datos in-memory)
+
