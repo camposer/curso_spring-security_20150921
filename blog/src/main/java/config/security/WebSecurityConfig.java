@@ -24,6 +24,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/admin**").hasRole("USER").and()
 			.formLogin()
 				.loginProcessingUrl("/login")
+				.defaultSuccessUrl("/")
 				.loginPage("/login-form.do")
 				.permitAll();
 	}

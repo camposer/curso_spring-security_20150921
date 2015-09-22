@@ -40,6 +40,7 @@
 	</div>
 	
 	<a href="admin.do">Admin</a>
+	<a href="login-form.do">Autenticar</a>
 </body>
 </html>
 
