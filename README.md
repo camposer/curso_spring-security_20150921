@@ -13,6 +13,8 @@ Curso de Spring Security
 
 - Spring Security Reference
 	- http://docs.spring.io/spring-security/site/docs/4.0.0.M2/reference/htmlsingle/
+- Spring Security Filter Chain
+	- http://docs.spring.io/spring-security/site/docs/3.0.x/reference/security-filter-chain.html
 - Spring Expression Language (SpEL)
 	- http://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/expressions.html
 - Referencing Spring Security configuration within Spring 3.1 Java Config
