@@ -11,7 +11,7 @@
 	<h1>Login</h1>
 	<c:url value="/login" var="loginUrl"/>
 	
-	<form action="login" method="post"> 
+	<form action="${loginUrl}" method="post"> 
 		<c:if test="${param.error != null}">
 			<p>Invalid username and password.</p>
 		</c:if>
