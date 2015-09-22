@@ -1,4 +1,4 @@
-package config;
+package config.global;
 
 import javax.persistence.EntityManagerFactory;
 
