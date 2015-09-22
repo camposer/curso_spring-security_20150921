@@ -20,6 +20,7 @@
 
 	<!-- Spring Security -->
 	<filter>
+	    <!-- Debe tener el nombre springSecurityFilterChain -->
 		<filter-name>springSecurityFilterChain</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
