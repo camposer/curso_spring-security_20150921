@@ -40,7 +40,7 @@
 	</div>
 	
 	<a href="admin.do">Admin</a>
-	<a href="login-form.do">Autenticar</a>
+	<a href="app/login-form">Autenticar</a>
 </body>
 </html>
 
