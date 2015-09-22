@@ -10,3 +10,8 @@ Ver:
 - URL destino
 
 4.- Cambiar el método de autenticación a JDBC
+
+5.- Cambiar enlace de cerrar sesión por logout (probar que funciona)
+
+6.- Agregar opción de remember-me 
+
