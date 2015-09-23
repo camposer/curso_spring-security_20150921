@@ -16,6 +16,10 @@
 		    /WEB-INF/spring/ctx.xml
 		    /WEB-INF/spring/security.xml
 		</param-value>
+		<!-- param-value>
+		    /WEB-INF/spring/ctx.xml
+		    /WEB-INF/spring/security-jc.xml
+		</param-value-->
 	</context-param>
 
 	<!-- Spring Security -->
