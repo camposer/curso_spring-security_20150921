@@ -1,4 +1,4 @@
-#Ejercicio 3
+#Ejercicio 1
 
 1.- Incluir un método de validación por formulario que permita autenticar a los usuarios configurados.
 
@@ -15,3 +15,6 @@ Ver:
 
 6.- Agregar opción de remember-me 
 
+7.- Securizar el método ArticuloService.obtenerArticulos()
+
+8.- Agregar un enlace de "info" a articulo/index.html que sólo puedan ver los usuarios con el rol ROLE_INFO (además deben tener el ROLE_USER).

@@ -1,11 +1,8 @@
 package web.controller;
 
-import java.io.IOException;
+import javax.servlet.http.HttpSession;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -17,8 +14,8 @@ public class AuthController {
 	}
 	
 	@RequestMapping("/app-logout")
-	public void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getServletContext().getRequestDispatcher("/WEB-INF/jsp/login.jsp")
-			.forward(request, response);
+	public String logout(HttpSession session) {
+		SecurityContextHolder.clearContext();
+		return "redirect:/";
 	}
 }

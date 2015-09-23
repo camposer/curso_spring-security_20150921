@@ -16,17 +16,27 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.inMemoryAuthentication()
 			.withUser("user").password("123").roles("USER");
 	}
-	
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
+			.csrf().disable()
 			.authorizeRequests()
 				.antMatchers("/admin**", "/app/admin/**").hasRole("USER").and()
 			.formLogin()
-				.loginProcessingUrl("/login")
+				.loginProcessingUrl("/entrar")
+				.usernameParameter("usuario")
+				.passwordParameter("clave")
 				.defaultSuccessUrl("/")
 				.loginPage("/app/login-form")
-				.permitAll();
+				.permitAll()
+				.and()
+			.logout()
+				.logoutUrl("/app-logout")
+				.logoutSuccessUrl("/").and()
+			.rememberMe()
+				.key("rememberMe")
+				.rememberMeParameter("remember-me");
 	}
 }
 

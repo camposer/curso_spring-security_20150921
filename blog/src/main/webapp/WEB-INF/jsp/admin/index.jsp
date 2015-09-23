@@ -34,7 +34,7 @@
 	</div>
 	
 	<a href="articulos.do">Inicio</a>
-	<a href="#">Salir</a>
+	<a href="app-logout">Salir</a>
 </body>
 </html>
 
