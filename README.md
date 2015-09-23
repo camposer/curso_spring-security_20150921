@@ -13,11 +13,15 @@ Curso de Spring Security
 
 - Spring Security Reference
 	- http://docs.spring.io/spring-security/site/docs/4.0.0.M2/reference/htmlsingle/
-- Spring Security Filter Chain
-	- http://docs.spring.io/spring-security/site/docs/3.0.x/reference/security-filter-chain.html
-- Spring Expression Language (SpEL)
-	- http://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/expressions.html
-- Referencing Spring Security configuration within Spring 3.1 Java Config
-	- http://stackoverflow.com/questions/10013996/referencing-spring-security-configuration-within-spring-3-1-java-config
+- Java Configuration
+	- http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#jc
+- Namespace Configuration
+	- http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#ns-config
+- Multiple HttpSecurity
+	- http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#multiple-httpsecurity
+- Standard Filter Aliases and Ordering
+	- http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#filter-stack
+- Advanced Web Features
+	- http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#ns-web-advanced
 - Implement custom AuthenticationProvider in Spring Security 2.06
 	- http://stackoverflow.com/questions/8649818/implement-custom-authenticationprovider-in-spring-security-2-06
