@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,6 +35,11 @@
 	
 	<a href="articulos.do">Inicio</a>
 	<a href="app-logout">Salir</a>
+
+ 	<sec:authorize access="hasRole('ROLE_INFO')">
+		<div>Este mensaje sólo lo pueden ver los que tienen el rol INFO</div>
+		<a href="#">Info</a>
+	</sec:authorize>
 </body>
 </html>
 
