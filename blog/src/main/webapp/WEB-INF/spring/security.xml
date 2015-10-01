@@ -14,7 +14,12 @@
 		<!-- intercept-url pattern="/admin/**" access="ROLE_ADMIN,IS_AUTHENTICATED_FULLY" /-->
 		<intercept-url pattern="/app/**" access="hasRole('ROLE_USER')" />
 		<intercept-url pattern="/admin**" access="hasRole('ROLE_USER')" />
-		<form-login login-page="/login-form.do" login-processing-url="/entrar" default-target-url="/" username-parameter="usuario" password-parameter="clave" />
+		<form-login 
+		    login-page="/login-form.do" 
+		    login-processing-url="/entrar"
+		    default-target-url="/" 
+		    username-parameter="usuario" 
+		    password-parameter="clave" />
 		<logout logout-url="/app-logout" logout-success-url="/" />
 		<remember-me key="rememberMe" remember-me-parameter="remember-me"/>
 		
